@@ -4,3 +4,14 @@
 -- insert into myentity (id, field) values(2, 'field-2');
 -- insert into myentity (id, field) values(3, 'field-3');
 -- alter sequence myentity_seq restart with 4;
+insert into
+    tb_client (id, documentId, email, name, password, wallet)
+values
+    (
+        1,
+        '03361331110',
+        'gabriel@email.com',
+        'Gabriel Oliveira',
+        '123456',
+        10.10
+    );
