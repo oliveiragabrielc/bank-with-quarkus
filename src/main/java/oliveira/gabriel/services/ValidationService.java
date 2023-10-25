@@ -2,7 +2,7 @@ package oliveira.gabriel.services;
 
 import oliveira.gabriel.entities.Client;
 
-public class RegisterValidation {
+public abstract class ValidationService {
 
     public static Boolean isExist(Client clientCompared) {
         Client client = Client.find("SELECT m FROM Client m WHERE m.documentId = ?1 OR m.email = ?2",

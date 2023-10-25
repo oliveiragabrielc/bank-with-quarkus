@@ -25,10 +25,6 @@ public class Client extends PanacheEntity {
 		return documentId;
 	}
 
-	public void setDocumentId(String documentId) {
-		this.documentId = documentId;
-	}
-
 	public String getEmail() {
 		return email;
 	}
@@ -49,8 +45,11 @@ public class Client extends PanacheEntity {
 		return wallet;
 	}
 
-	public void setWallet(Double wallet) {
-		this.wallet = wallet;
+	public void debit(Double value) {
+		wallet = wallet - value;
 	}
 
+	public void credit(Double value) {
+		wallet = wallet + value;
+	}
 }

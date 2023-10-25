@@ -13,5 +13,16 @@ values
         'gabriel@email.com',
         'Gabriel Oliveira',
         '123456',
-        10.10
+        100
+    );
+    insert into
+    tb_client (id, documentId, email, name, password, wallet)
+values
+    (
+        2,
+        '00100200301',
+        'nivaldinho@email.com',
+        'Mac Nivaldo',
+        '123456',
+        200
     );
